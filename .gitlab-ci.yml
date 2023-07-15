@@ -1,0 +1,9 @@
+variables:
+  PY_VERSION: "3.11"
+  GENERATE_DOCS: "true"
+  NAMESPACE: "src"
+
+include:
+  - project: midas/pipeline-templates
+    ref: main
+    file: /python/python-base.yml
