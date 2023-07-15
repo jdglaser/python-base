@@ -155,8 +155,8 @@ dmypy.json
 cython_debug/
 
 # VS Code
-.vscode
-.vscode/*
+#.vscode
+#.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json

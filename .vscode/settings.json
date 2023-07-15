@@ -1,0 +1,51 @@
+{
+    // Python
+    "python.defaultInterpreterPath": "/Users/<lan id>/.pyenv/versions/3.11.3/bin/python",
+    "python.venvFolders": [
+        "/Users/<lan id>/.pyenv/versions"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--toml-config",
+        "${workspaceFolder}/pyproject.toml"
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--config-file",
+        "${workspaceFolder}/pyproject.toml"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--config",
+        "${workspaceFolder}/pyproject.toml"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceRoot}",
+        "${workspaceRoot}/src"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.autoComplete.extraPaths": [
+        "${workspaceRoot}",
+        "${workspaceRoot}/src"
+    ],
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "",
+            "depth": 4,
+            "includeAllSymbols": true
+        }
+    ],
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+        },
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+}
